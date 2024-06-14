@@ -3,9 +3,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { DireccionesModule } from './direcciones/direcciones.module';
 
-@Module({
-  imports: [DireccionesModule],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService, PrismaService],
 })
 export class AppModule {}
