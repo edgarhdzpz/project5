@@ -1,8 +1,10 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { DireccionesModule } from './direcciones/direcciones.module';
 
+
+@Module({
+  imports: [LocalidadesModule],
   controllers: [AppController],
   providers: [AppService, PrismaService],
 })
