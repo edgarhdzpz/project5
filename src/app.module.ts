@@ -6,6 +6,6 @@ import { LocalidadesModule } from './localidades/localidades.module';
 @Module({
   imports: [LocalidadesModule],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService, PrismaService],
 })
 export class AppModule {}
